@@ -12,7 +12,7 @@ protocol HasDependencies {
     var catsViewModel: CatViewModel { get }
 }
 
-class AppDependency {
+final class AppDependency {
     private let networkService: NetworkService
     private let catViewModel: CatViewModel
 

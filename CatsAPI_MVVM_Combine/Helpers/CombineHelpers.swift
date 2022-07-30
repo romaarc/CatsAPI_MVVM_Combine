@@ -5,11 +5,10 @@
 //  Created by Roman Gorshkov on 28.12.2021.
 //
 
-import Foundation
 import UIKit
 import Combine
 
-class ControlPublisher<T: UIControl>: Publisher {
+final class ControlPublisher<T: UIControl>: Publisher {
     typealias ControlEvent = (control: UIControl, event: UIControl.Event)
     typealias Output = ControlEvent
     typealias Failure = Never

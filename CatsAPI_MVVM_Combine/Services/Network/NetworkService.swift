@@ -16,7 +16,6 @@ enum NetworkErrors: Error {
 }
 
 final class NetworkService {
-    
     func baseRequest<T: Decodable>(request: URLRequest) -> AnyPublisher<T, Error> {
         var dataTask: URLSessionDataTask?
         let onSubscription: (Subscription) -> Void = { _ in dataTask?.resume() }

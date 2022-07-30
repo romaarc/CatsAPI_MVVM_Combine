@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-class CatViewModel {
+final class CatViewModel {
     @Published var cats: Response = []
     private var cancellables = Set<AnyCancellable>()
     private let catsNetworkService: NetworkServiceProtocol

@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-class CatViewController: BaseViewController {
+final class CatViewController: BaseViewController {
     
     private var viewModel: CatViewModel
     
